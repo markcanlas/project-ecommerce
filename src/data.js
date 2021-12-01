@@ -28,7 +28,7 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://pbs.twimg.com/media/Eq0Pof7WMAEmSWC.jpg",
+    img: "https://uploads.dailydot.com/2019/01/shonen-jump-subscription-is-it-worth-it.jpg?auto=compress%2Cformat&ixlib=php-3.3.0",
     title: "SHONEN",
   },
   {
@@ -46,34 +46,40 @@ export const categories = [
 export const popularProducts = [
   {
     id: 1,
-    img: "https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+    img: "https://uploads.mangadex.org/covers/a1c7c817-4e59-43b7-9365-09675a149a6f/3573d948-fe54-4b81-9293-c74f5bb34c91.jpg",
   },
   {
     id: 2,
-    img: "https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+    img: "https://uploads.mangadex.org/covers/c52b2ce3-7f95-469c-96b0-479524fb7a1a/d75ef89a-1c7b-4da8-9895-f1b8641e7d2d.jpg",
   },
   {
     id: 3,
-    img: "https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+
+    img: "https://uploads.mangadex.org/covers/e7eabe96-aa17-476f-b431-2497d5e9d060/e6206050-841c-4702-ae26-d927876f557c.jpg",
   },
   {
     id: 4,
-    img: "https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+
+    img: "https://uploads.mangadex.org/covers/789642f8-ca89-4e4e-8f7b-eee4d17ea08b/cc8b13fa-3466-40bd-9fcd-35bfb4b842ea.jpg",
   },
   {
     id: 5,
-    img: "https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+    img: "https://uploads.mangadex.org/covers/077a3fed-1634-424f-be7a-9a96b7f07b78/c33d18a1-50b5-470f-8b46-350416ffcbbf.jpg",
   },
   {
     id: 6,
-    img: "https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+    img: "https://uploads.mangadex.org/covers/e78a489b-6632-4d61-b00b-5206f5b8b22b/00767c3e-fbac-4e7e-93cb-002b49a832fc.jpg",
   },
   {
     id: 7,
-    img: "https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+    img: "https://uploads.mangadex.org/covers/304ceac3-8cdb-4fe7-acf7-2b6ff7a60613/06f08961-bb02-43c9-9158-1b5ef5517137.jpg",
   },
   {
     id: 8,
-    img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    img: "https://uploads.mangadex.org/covers/6b1eb93e-473a-4ab3-9922-1a66d2a29a4a/3980b80a-b454-40f9-a07a-737abd556b31.jpg",
+  },
+  {
+    id: 8,
+    img: "https://uploads.mangadex.org/covers/4f3bcae4-2d96-4c9d-932c-90181d9c873e/4bf09fcf-1f30-4030-9b23-0e1a0aaa1de0.jpg",
   },
 ];

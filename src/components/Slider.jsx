@@ -1,26 +1,26 @@
 import React, { useState, useRef, useEffect } from "react";
-import { styled } from "@mui/system";
+import styled from "styled-components";
 
 import { sliderItems } from "../data";
 
-const Container = styled("div")`
+const Container = styled.div`
   max-width: 1000px;
   position: relative;
   margin: 3rem auto;
   overflow: hidden;
 `;
-const SlideContainer = styled("div")`
+const SlideContainer = styled.div`
   display: inline-block;
   height: 350px;
   width: 100%;
 `;
 
-const Slide = styled("div")`
+const Slide = styled.div`
   transition: ease 1000ms;
   white-space: nowrap;
 `;
 
-const Text = styled("div")`
+const Text = styled.div`
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -29,7 +29,7 @@ const Text = styled("div")`
   text-align: center;
 `;
 
-const NumberText = styled("div")`
+const NumberText = styled.div`
   color: #555;
   font-size: 12px;
   padding: 8px 12px;
@@ -37,18 +37,18 @@ const NumberText = styled("div")`
   top: 0;
 `;
 
-const Title = styled("h1")`
+const Title = styled.h1`
   color: crimson;
   font-size: 70px;
 `;
-const Description = styled("p")`
+const Description = styled.p`
   color: #fff0f6;
   margin: 50px 0px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
 `;
-const Button = styled("button")`
+const Button = styled.button`
   color: #d1e4f6;
   font-weight: 700;
   font-size: 20px;
@@ -59,11 +59,11 @@ const Button = styled("button")`
   border-style: none;
 `;
 
-const DotContainer = styled("div")`
+const DotContainer = styled.div`
   text-align: center;
 `;
 
-const Dot = styled("div")`
+const Dot = styled.div`
   height: 15px;
   width: 15px;
   margin: 0 2px;
