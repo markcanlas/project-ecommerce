@@ -1,79 +1,84 @@
 import React from "react";
-import { styled } from "@mui/system";
+import styled from "styled-components";
 import Badge from "@mui/material/Badge";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
-const Container = styled("div")({
-  height: 60,
-});
+const Container = styled.div`
+  height: 60px;
+`;
 
-const Wrapper = styled("div")({
-  padding: "10px 20px",
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-});
+const Wrapper = styled.div`
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
-const Left = styled("div")({
-  flex: 1,
-  paddingLeft: 20,
-});
+const Left = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+`;
 
-const Logo = styled("h1")({
-  fontWeight: "bold",
-});
+const Language = styled.span`
+  font-size: 14px;
+  cursor: pointer;
+`;
 
-const Right = styled("div")({
-  flex: 1,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "flex-end",
-});
+const SearchContainer = styled.div`
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+`;
 
-const MenuItem = styled("div")({
-  fontSize: 14,
-  cursor: "pointer",
-  marginLeft: 25,
-});
+const Input = styled.input`
+  border: none;
+`;
 
-const Center = styled("div")({
-  flex: 1,
-  display: "flex",
-  alignItems: "center",
-});
+const Center = styled.div`
+  flex: 1;
+  text-align: center;
+`;
 
-const SearchContainer = styled("div")({
-  border: "1px solid lightgray",
-  display: "flex",
-  alignItems: "center",
-  marginLeft: 25,
-  padding: 5,
-});
+const Logo = styled.h1`
+  font-weight: bold;
+`;
+const Right = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
 
-const Input = styled("input")({
-  border: "none",
-});
+const MenuItem = styled.div`
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+`;
 
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
         <Left>
-          <Logo>MANGA KA</Logo>
-        </Left>
-        <Center>
+          <Language>EN</Language>
           <SearchContainer>
-            <Input />
+            <Input placeholder="Search" />
             <SearchIcon style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
+        </Left>
+        <Center>
+          <Logo>MANGA NE</Logo>
         </Center>
         <Right>
-          <MenuItem>Register</MenuItem>
-          <MenuItem>Sign In</MenuItem>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlinedIcon color="action" />
+              <ShoppingCartOutlinedIcon />
             </Badge>
           </MenuItem>
         </Right>
