@@ -12,6 +12,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(75%);
 `;
 
 const Info = styled.div`
@@ -27,9 +28,10 @@ const Info = styled.div`
 `;
 
 const Title = styled.h1`
-  color: red;
+  color: #fff;
   font-size: 35px;
   margin-bottom: 20px;
+  text-decoration: underline;
 `;
 
 const Button = styled.button`

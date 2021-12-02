@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Product from "./Product";
-import { shonenProducts } from "../data";
+import { popularProducts } from "../data";
+import PopularProduct from "./PopularProduct";
 
 const Container = styled.div`
   margin-top: 3rem;
@@ -18,17 +18,17 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Products = () => {
+const PopularProducts = () => {
   return (
     <Container>
-      <Header>Shonen</Header>
+      <Header>Popular Manga</Header>
       <Wrapper>
-        {shonenProducts.map((item) => (
-          <Product item={item} key={item.id} />
+        {popularProducts.map((item) => (
+          <PopularProduct item={item} key={item.id} />
         ))}
       </Wrapper>
     </Container>
   );
 };
 
-export default Products;
+export default PopularProducts;

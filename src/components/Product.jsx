@@ -1,85 +1,67 @@
 import styled from "styled-components";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-
-const Info = styled.div`
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease;
-  cursor: pointer;
-`;
 
 const Container = styled.div`
   flex: 1;
-  margin: 5px;
-  min-width: 280px;
-  height: 350px;
+  margin: 5px 0;
+  /* min-width: 220px; */
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f5fbfd;
-  position: relative;
-  &:hover ${Info} {
-    opacity: 1;
-  }
+  flex-direction: column;
+  border: 1px solid #a5d8ff;
 `;
 
-const Circle = styled.div`
+const ImageContainer = styled.div`
+  height: 280px;
   width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
 `;
 
 const Image = styled.img`
   height: 100%;
   width: 100%;
-  z-index: 2;
+  object-fit: cover;
+  padding-top: 20px;
+  cursor: pointer;
 `;
 
-const Icon = styled.div`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: white;
+const InfoContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: #e9f5f5;
-    transform: scale(1.1);
-  }
+  flex-direction: column;
+  margin-top: 30px;
+  height: 220px;
+  width: 200px;
+`;
+
+const Info = styled.p`
+  color: red;
+  margin-bottom: 5px;
+`;
+
+const Button = styled.button`
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #1976d2;
+  color: #d1e4f6;
+  cursor: pointer;
+  font-weight: 600;
+  width: 80%;
 `;
 
 const Product = ({ item }) => {
   return (
     <Container>
-      <Circle />
-      <Image src={item.img} />
-      <Info>
-        <Icon>
-          <ShoppingCartOutlinedIcon />
-        </Icon>
-        <Icon>
-          <SearchOutlinedIcon />
-        </Icon>
-        <Icon>
-          <FavoriteBorderIcon />
-        </Icon>
-      </Info>
+      <ImageContainer>
+        {" "}
+        <Image src={item.img} />
+      </ImageContainer>
+      <InfoContainer>
+        <Info>{item.title}</Info>
+        <Info>{item.price}</Info>
+      </InfoContainer>
+      <Button>Order Now</Button>
     </Container>
   );
 };

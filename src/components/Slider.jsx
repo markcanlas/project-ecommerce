@@ -38,7 +38,7 @@ const NumberText = styled.div`
 `;
 
 const Title = styled.h1`
-  color: crimson;
+  color: red;
   font-size: 70px;
 `;
 const Description = styled.p`
@@ -78,6 +78,7 @@ const Dot = styled.div`
 const Image = styled("img")`
   height: 100%;
   width: 100%;
+  filter: brightness(75%);
 `;
 
 const Slider = () => {
