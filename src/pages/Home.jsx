@@ -3,7 +3,8 @@ import Navbar from "../components/Navbar";
 import Slider from "../components/Slider";
 import Categories from "../components/Categories";
 import PopularProducts from "../components/PopularProducts";
-import Products from "../components/Products";
+import NewProducts from "../components/NewProducts";
+import MonthlyProducts from "../components/MonthlyProducts";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -11,9 +12,10 @@ const Home = () => {
     <div>
       <Navbar />
       <Slider />
-      <Categories />
       <PopularProducts />
-      <Products />
+      <NewProducts />
+      <MonthlyProducts />
+      <Categories />
       <Footer />
     </div>
   );

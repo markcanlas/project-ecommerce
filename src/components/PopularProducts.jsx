@@ -3,7 +3,7 @@ import { popularProducts } from "../data";
 import PopularProduct from "./PopularProduct";
 
 const Container = styled.div`
-  margin-top: 3rem;
+  margin: 3rem 2rem 0;
 `;
 
 const Header = styled.h1`

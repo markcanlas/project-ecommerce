@@ -2,20 +2,18 @@ import styled from "styled-components";
 
 const Container = styled.div`
   flex: 1;
-  margin: 5px 0;
-  /* min-width: 220px; */
-  height: 450px;
+  height: 480px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #f5fbfd;
-  flex-direction: column;
-  border: 1px solid #a5d8ff;
 `;
 
 const ImageContainer = styled.div`
   height: 280px;
-  width: 200px;
+  width: 195px;
+  padding: 0 20px;
 `;
 
 const Image = styled.img`
@@ -29,14 +27,14 @@ const Image = styled.img`
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 40px;
   height: 220px;
   width: 200px;
 `;
 
 const Info = styled.p`
-  color: red;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 600;
 `;
 
 const Button = styled.button`
@@ -59,7 +57,7 @@ const Product = ({ item }) => {
       </ImageContainer>
       <InfoContainer>
         <Info>{item.title}</Info>
-        <Info>{item.price}</Info>
+        <Info style={{ color: "red", fontSize: "20px" }}>{item.price}</Info>
       </InfoContainer>
       <Button>Order Now</Button>
     </Container>

@@ -83,11 +83,12 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>MANGA NE</Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
+          MANGA NE is the leading manga retailer in the Philippines. We aspire
+          to deliver hapiness to our fellow readers as we continue to provide
+          “All Official Mangas Available to All” by improving selection, access
+          and affordability of books.
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
@@ -109,13 +110,13 @@ const Footer = () => {
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
-          <ListItem>Accessories</ListItem>
-          <ListItem>My Account</ListItem>
+          <ListItem>New Release</ListItem>
           <ListItem>Order Tracking</ListItem>
+          <ListItem>Hot Manga</ListItem>
+          <ListItem>My Account</ListItem>
+          <ListItem>Monthly Release</ListItem>
           <ListItem>Wishlist</ListItem>
-          <ListItem>Wishlist</ListItem>
+          <ListItem>Collection</ListItem>
           <ListItem>Terms</ListItem>
         </List>
       </Center>

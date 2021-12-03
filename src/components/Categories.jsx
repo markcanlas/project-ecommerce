@@ -4,7 +4,7 @@ import { categories } from "../data";
 import CategoryItem from "./CategoryItem";
 
 const Container = styled.div`
-  margin-top: 5rem;
+  margin: 3rem 2rem 0;
 `;
 
 const Header = styled.h1`
