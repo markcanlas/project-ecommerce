@@ -4,14 +4,14 @@ import styled from "styled-components";
 import { sliderItems } from "../data";
 
 const Container = styled.div`
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: 3rem auto;
   overflow: hidden;
 `;
 const SlideContainer = styled.div`
   display: inline-block;
-  height: 350px;
+  height: 80vh;
   width: 100%;
 `;
 
@@ -38,7 +38,7 @@ const NumberText = styled.div`
 `;
 
 const Title = styled.h1`
-  color: crimson;
+  color: red;
   font-size: 70px;
 `;
 const Description = styled.p`
@@ -78,6 +78,7 @@ const Dot = styled.div`
 const Image = styled("img")`
   height: 100%;
   width: 100%;
+  filter: brightness(75%);
 `;
 
 const Slider = () => {

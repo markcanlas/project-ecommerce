@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import { categories } from "../data";
-import CategoryItem from "./CategoryItem";
+import { popularProducts } from "../data";
+import PopularProduct from "./PopularProduct";
 
 const Container = styled.div`
   margin: 3rem 2rem 0;
@@ -13,22 +12,23 @@ const Header = styled.h1`
 `;
 
 const Wrapper = styled.div`
-  display: flex;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 `;
 
-const Categories = () => {
+const PopularProducts = () => {
   return (
     <Container>
-      <Header>Top Category</Header>
+      <Header>Popular Manga</Header>
       <Wrapper>
-        {categories.map((item) => (
-          <CategoryItem item={item} key={item.id} />
+        {popularProducts.map((item) => (
+          <PopularProduct item={item} key={item.id} />
         ))}
       </Wrapper>
     </Container>
   );
 };
 
-export default Categories;
+export default PopularProducts;
